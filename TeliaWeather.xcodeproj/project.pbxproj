@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADE4753A254EB09000F12842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE47539254EB09000F12842 /* AppDelegate.swift */; };
+		ADE4753C254EB09000F12842 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4753B254EB09000F12842 /* SceneDelegate.swift */; };
+		ADE4753F254EB09000F12842 /* TeliaWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADE4753D254EB09000F12842 /* TeliaWeather.xcdatamodeld */; };
+		ADE47541254EB09000F12842 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE47540254EB09000F12842 /* ContentView.swift */; };
+		ADE47543254EB09300F12842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE47542254EB09300F12842 /* Assets.xcassets */; };
+		ADE47546254EB09300F12842 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE47545254EB09300F12842 /* Preview Assets.xcassets */; };
+		ADE47549254EB09300F12842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE47547254EB09300F12842 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ADE47536254EB09000F12842 /* TeliaWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeliaWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE47539254EB09000F12842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADE4753B254EB09000F12842 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ADE4753E254EB09000F12842 /* TeliaWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TeliaWeather.xcdatamodel; sourceTree = "<group>"; };
+		ADE47540254EB09000F12842 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ADE47542254EB09300F12842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADE47545254EB09300F12842 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ADE47548254EB09300F12842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADE4754A254EB09300F12842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADE47533254EB09000F12842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADE4752D254EB09000F12842 = {
+			isa = PBXGroup;
+			children = (
+				ADE47538254EB09000F12842 /* TeliaWeather */,
+				ADE47537254EB09000F12842 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADE47537254EB09000F12842 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADE47536254EB09000F12842 /* TeliaWeather.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADE47538254EB09000F12842 /* TeliaWeather */ = {
+			isa = PBXGroup;
+			children = (
+				ADE47539254EB09000F12842 /* AppDelegate.swift */,
+				ADE4753B254EB09000F12842 /* SceneDelegate.swift */,
+				ADE47540254EB09000F12842 /* ContentView.swift */,
+				ADE47542254EB09300F12842 /* Assets.xcassets */,
+				ADE47547254EB09300F12842 /* LaunchScreen.storyboard */,
+				ADE4754A254EB09300F12842 /* Info.plist */,
+				ADE4753D254EB09000F12842 /* TeliaWeather.xcdatamodeld */,
+				ADE47544254EB09300F12842 /* Preview Content */,
+			);
+			path = TeliaWeather;
+			sourceTree = "<group>";
+		};
+		ADE47544254EB09300F12842 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ADE47545254EB09300F12842 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADE47535254EB09000F12842 /* TeliaWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE4754D254EB09300F12842 /* Build configuration list for PBXNativeTarget "TeliaWeather" */;
+			buildPhases = (
+				ADE47532254EB09000F12842 /* Sources */,
+				ADE47533254EB09000F12842 /* Frameworks */,
+				ADE47534254EB09000F12842 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeliaWeather;
+			productName = TeliaWeather;
+			productReference = ADE47536254EB09000F12842 /* TeliaWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADE4752E254EB09000F12842 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Yuliia Stelmakhovska";
+				TargetAttributes = {
+					ADE47535254EB09000F12842 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = ADE47531254EB09000F12842 /* Build configuration list for PBXProject "TeliaWeather" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADE4752D254EB09000F12842;
+			productRefGroup = ADE47537254EB09000F12842 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADE47535254EB09000F12842 /* TeliaWeather */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADE47534254EB09000F12842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE47549254EB09300F12842 /* LaunchScreen.storyboard in Resources */,
+				ADE47546254EB09300F12842 /* Preview Assets.xcassets in Resources */,
+				ADE47543254EB09300F12842 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADE47532254EB09000F12842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE4753A254EB09000F12842 /* AppDelegate.swift in Sources */,
+				ADE4753F254EB09000F12842 /* TeliaWeather.xcdatamodeld in Sources */,
+				ADE47541254EB09000F12842 /* ContentView.swift in Sources */,
+				ADE4753C254EB09000F12842 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ADE47547254EB09300F12842 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADE47548254EB09300F12842 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADE4754B254EB09300F12842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADE4754C254EB09300F12842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADE4754E254EB09300F12842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TeliaWeather/Preview Content\"";
+				DEVELOPMENT_TEAM = 2DQMEK652W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TeliaWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stelmakhovska.TeliaWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADE4754F254EB09300F12842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TeliaWeather/Preview Content\"";
+				DEVELOPMENT_TEAM = 2DQMEK652W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TeliaWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stelmakhovska.TeliaWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADE47531254EB09000F12842 /* Build configuration list for PBXProject "TeliaWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE4754B254EB09300F12842 /* Debug */,
+				ADE4754C254EB09300F12842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE4754D254EB09300F12842 /* Build configuration list for PBXNativeTarget "TeliaWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE4754E254EB09300F12842 /* Debug */,
+				ADE4754F254EB09300F12842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ADE4753D254EB09000F12842 /* TeliaWeather.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ADE4753E254EB09000F12842 /* TeliaWeather.xcdatamodel */,
+			);
+			currentVersion = ADE4753E254EB09000F12842 /* TeliaWeather.xcdatamodel */;
+			path = TeliaWeather.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ADE4752E254EB09000F12842 /* Project object */;
+}
