@@ -7,27 +7,28 @@
 //
 
 import XCTest
+@testable import TeliaWeather
 
 class UnitHelperTest: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    
+    func testConvertDoubleToStringDegrees()  {
+        var testcase = 12.9
+        var result = UnitHelper().convertDoubleToStringDegrees(doubleValue: testcase)
+        XCTAssertEqual(result, "13°")
+        testcase = -11.9
+        result = UnitHelper().convertDoubleToStringDegrees(doubleValue: testcase)
+        XCTAssertEqual(result, "-12°")
+        testcase = 0
+        result = UnitHelper().convertDoubleToStringDegrees(doubleValue: testcase)
+        XCTAssertNotEqual(result, "test")
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testConvertInt32ToStringDate(){
+        let testcase:Int32 = 1604258400
+        let result = UnitHelper().convertInt32ToStringDate(int32: testcase)
+        XCTAssertEqual(result, "01 Nov 20:20")
+        XCTAssertNotEqual(result, "test")
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+    
 }

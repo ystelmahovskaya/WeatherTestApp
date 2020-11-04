@@ -1,33 +1,75 @@
 //
-//  TeliaWeatherTests.swift
-//  TeliaWeatherTests
+//  HttpClientTest.swift
+//  HttpClientTest
 //
 //  Created by Yuliia Stelmakhovska on 2020-11-03.
 //  Copyright © 2020 Yuliia Stelmakhovska. All rights reserved.
 //
 
 import XCTest
+@testable import TeliaWeather
 
-class TeliaWeatherTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class HttpClientTest: XCTestCase {
+    
+    var apiClient:WeatherApiClient? = WeatherApiClient(apiKey: AppConstants.APIKey)
+    let session = URLSessionMock()
+    override func setUp() {
+        let error = NSError(domain: TWNetworkingErrorDomain, code: 200, userInfo: nil)
+        session.error = error
+        apiClient?.session = self.session
+        
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testfetchCurrentWeatherForCity(){
+        
+        apiClient?.fetchCurrentWeatherForCity(cityName: "test", completion: { result in
+            XCTAssertEqual(self.session.lastURL?.absoluteString, "https://api.openweathermap.org/data/2.5/weather?q=test&units=metric&appid=d2cc7d350effb1c5e4e5f5e7cf5e0960")
+            XCTAssertNil(self.session.data)
+            XCTAssertNotNil(self.session.error)
+            switch result{
+            case .success(_):
+                  XCTAssertNil(self.session.error)
+            case .failure(let err):
+                XCTAssertNotNil(err)
+                XCTAssertNil(self.session.data)
+            }
+        })
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testGetForecasty(){
+        apiClient?.getForecast(cityName: "test1", completion: { result in
+        XCTAssertEqual(self.session.lastURL?.absoluteString, "https://api.openweathermap.org/data/2.5/forecast?q=test1&units=metric&appid=d2cc7d350effb1c5e4e5f5e7cf5e0960")
+            XCTAssertNil(self.session.data)
+            XCTAssertNotNil(self.session.error)
+        })
     }
+    
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+class URLSessionDataTaskMock: URLSessionDataTask {
+    private let closure: () -> Void
+    init(closure: @escaping () -> Void) {
+        self.closure = closure
+    }
+    override func resume() {
+        closure()
+    }
+}
+
+class URLSessionMock: URLSession {
+    typealias CompletionHandler = (Data?, URLResponse?, Error?) -> Void
+    var data: Data?
+    var error: Error?
+    var lastURL: URL?
+    
+    
+    override func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+        let data = self.data
+        let error = self.error
+        self.lastURL = request.url
+        return URLSessionDataTaskMock {
+            completionHandler(data, nil, error)
         }
     }
-
 }
+

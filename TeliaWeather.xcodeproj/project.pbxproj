@@ -3,33 +3,107 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D9733ECA87027DFD4870138 /* Pods_TeliaWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1450C6521467B26330EDEA7 /* Pods_TeliaWeather.framework */; };
 		ADE4753A254EB09000F12842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE47539254EB09000F12842 /* AppDelegate.swift */; };
 		ADE4753C254EB09000F12842 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4753B254EB09000F12842 /* SceneDelegate.swift */; };
 		ADE4753F254EB09000F12842 /* TeliaWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADE4753D254EB09000F12842 /* TeliaWeather.xcdatamodeld */; };
-		ADE47541254EB09000F12842 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE47540254EB09000F12842 /* ContentView.swift */; };
 		ADE47543254EB09300F12842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE47542254EB09300F12842 /* Assets.xcassets */; };
 		ADE47546254EB09300F12842 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE47545254EB09300F12842 /* Preview Assets.xcassets */; };
 		ADE47549254EB09300F12842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE47547254EB09300F12842 /* LaunchScreen.storyboard */; };
+		ADE47551254EB0DA00F12842 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE47550254EB0DA00F12842 /* APIClient.swift */; };
+		ADE47557254EB8A100F12842 /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE47556254EB8A100F12842 /* PagesViewController.swift */; };
+		ADE47559254EB9BD00F12842 /* WeatherPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE47558254EB9BD00F12842 /* WeatherPage.swift */; };
+		ADE4755B254EBC4000F12842 /* WeatherForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4755A254EBC4000F12842 /* WeatherForecastCell.swift */; };
+		ADE4755D254EC5A900F12842 /* ForecastTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4755C254EC5A900F12842 /* ForecastTableViewDataSource.swift */; };
+		ADE4755F254EDC8200F12842 /* WeatherApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4755E254EDC8200F12842 /* WeatherApiClient.swift */; };
+		ADE4758C254F110600F12842 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4758B254F110600F12842 /* ViewModel.swift */; };
+		ADE4758E254F524600F12842 /* UnitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4758D254F524600F12842 /* UnitHelper.swift */; };
+		ADE47590254F615900F12842 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4758F254F615900F12842 /* CoreDataManager.swift */; };
+		ADE4759225506A5C00F12842 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4759125506A5B00F12842 /* ErrorManager.swift */; };
+		ADE4759425506B6200F12842 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4759325506B6200F12842 /* AppConstants.swift */; };
+		ADE47596255076C900F12842 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE47595255076C900F12842 /* DataProvider.swift */; };
+		ADE4759825508C0400F12842 /* WeatherIconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4759725508C0400F12842 /* WeatherIconManager.swift */; };
+		ADE4759B2551490F00F12842 /* DecodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE4759A2551490F00F12842 /* DecodeHelper.swift */; };
+		ADE475A3255158A600F12842 /* HttpClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE475A2255158A600F12842 /* HttpClientTest.swift */; };
+		ADE475AB2551625700F12842 /* UnitHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE475AA2551625700F12842 /* UnitHelperTest.swift */; };
+		ADE475AD255172C700F12842 /* CoreDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE475AC255172C700F12842 /* CoreDataTest.swift */; };
+		ADE475B52551A03400F12842 /* TeliaWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE475B42551A03400F12842 /* TeliaWeatherUITests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		ADE475A5255158A600F12842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADE4752E254EB09000F12842 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE47535254EB09000F12842;
+			remoteInfo = TeliaWeather;
+		};
+		ADE475B72551A03400F12842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADE4752E254EB09000F12842 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE47535254EB09000F12842;
+			remoteInfo = TeliaWeather;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		595E255510ED4CDFE1542977 /* Pods-TeliaWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeliaWeather.release.xcconfig"; path = "Target Support Files/Pods-TeliaWeather/Pods-TeliaWeather.release.xcconfig"; sourceTree = "<group>"; };
+		A12E1FBB4A9F4F5CE3BABFAA /* Pods-TeliaWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeliaWeather.debug.xcconfig"; path = "Target Support Files/Pods-TeliaWeather/Pods-TeliaWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		ADE47536254EB09000F12842 /* TeliaWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeliaWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE47539254EB09000F12842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADE4753B254EB09000F12842 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ADE4753E254EB09000F12842 /* TeliaWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TeliaWeather.xcdatamodel; sourceTree = "<group>"; };
-		ADE47540254EB09000F12842 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADE47542254EB09300F12842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE47545254EB09300F12842 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADE47548254EB09300F12842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADE4754A254EB09300F12842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE47550254EB0DA00F12842 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		ADE47556254EB8A100F12842 /* PagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
+		ADE47558254EB9BD00F12842 /* WeatherPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPage.swift; sourceTree = "<group>"; };
+		ADE4755A254EBC4000F12842 /* WeatherForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastCell.swift; sourceTree = "<group>"; };
+		ADE4755C254EC5A900F12842 /* ForecastTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewDataSource.swift; sourceTree = "<group>"; };
+		ADE4755E254EDC8200F12842 /* WeatherApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApiClient.swift; sourceTree = "<group>"; };
+		ADE4758B254F110600F12842 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		ADE4758D254F524600F12842 /* UnitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitHelper.swift; sourceTree = "<group>"; };
+		ADE4758F254F615900F12842 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		ADE4759125506A5B00F12842 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		ADE4759325506B6200F12842 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		ADE47595255076C900F12842 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		ADE4759725508C0400F12842 /* WeatherIconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIconManager.swift; sourceTree = "<group>"; };
+		ADE4759A2551490F00F12842 /* DecodeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeHelper.swift; sourceTree = "<group>"; };
+		ADE475A0255158A600F12842 /* TeliaWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeliaWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE475A2255158A600F12842 /* HttpClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientTest.swift; sourceTree = "<group>"; };
+		ADE475A4255158A600F12842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE475AA2551625700F12842 /* UnitHelperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitHelperTest.swift; sourceTree = "<group>"; };
+		ADE475AC255172C700F12842 /* CoreDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTest.swift; sourceTree = "<group>"; };
+		ADE475B22551A03400F12842 /* TeliaWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeliaWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE475B42551A03400F12842 /* TeliaWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeliaWeatherUITests.swift; sourceTree = "<group>"; };
+		ADE475B62551A03400F12842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1450C6521467B26330EDEA7 /* Pods_TeliaWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeliaWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ADE47533254EB09000F12842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9733ECA87027DFD4870138 /* Pods_TeliaWeather.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE4759D255158A600F12842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE475AF2551A03400F12842 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,11 +113,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54195B22679042A8463A92D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1450C6521467B26330EDEA7 /* Pods_TeliaWeather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		876380287A035834F61E257C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A12E1FBB4A9F4F5CE3BABFAA /* Pods-TeliaWeather.debug.xcconfig */,
+				595E255510ED4CDFE1542977 /* Pods-TeliaWeather.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ADE4752D254EB09000F12842 = {
 			isa = PBXGroup;
 			children = (
 				ADE47538254EB09000F12842 /* TeliaWeather */,
+				ADE475A1255158A600F12842 /* TeliaWeatherTests */,
+				ADE475B32551A03400F12842 /* TeliaWeatherUITests */,
 				ADE47537254EB09000F12842 /* Products */,
+				876380287A035834F61E257C /* Pods */,
+				54195B22679042A8463A92D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				ADE47536254EB09000F12842 /* TeliaWeather.app */,
+				ADE475A0255158A600F12842 /* TeliaWeatherTests.xctest */,
+				ADE475B22551A03400F12842 /* TeliaWeatherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,7 +157,20 @@
 			children = (
 				ADE47539254EB09000F12842 /* AppDelegate.swift */,
 				ADE4753B254EB09000F12842 /* SceneDelegate.swift */,
-				ADE47540254EB09000F12842 /* ContentView.swift */,
+				ADE47550254EB0DA00F12842 /* APIClient.swift */,
+				ADE4755E254EDC8200F12842 /* WeatherApiClient.swift */,
+				ADE47556254EB8A100F12842 /* PagesViewController.swift */,
+				ADE47558254EB9BD00F12842 /* WeatherPage.swift */,
+				ADE4759125506A5B00F12842 /* ErrorManager.swift */,
+				ADE4758D254F524600F12842 /* UnitHelper.swift */,
+				ADE4759325506B6200F12842 /* AppConstants.swift */,
+				ADE4759725508C0400F12842 /* WeatherIconManager.swift */,
+				ADE4755C254EC5A900F12842 /* ForecastTableViewDataSource.swift */,
+				ADE4759A2551490F00F12842 /* DecodeHelper.swift */,
+				ADE4758B254F110600F12842 /* ViewModel.swift */,
+				ADE4755A254EBC4000F12842 /* WeatherForecastCell.swift */,
+				ADE4758F254F615900F12842 /* CoreDataManager.swift */,
+				ADE47595255076C900F12842 /* DataProvider.swift */,
 				ADE47542254EB09300F12842 /* Assets.xcassets */,
 				ADE47547254EB09300F12842 /* LaunchScreen.storyboard */,
 				ADE4754A254EB09300F12842 /* Info.plist */,
@@ -78,6 +188,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		ADE475A1255158A600F12842 /* TeliaWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADE475A2255158A600F12842 /* HttpClientTest.swift */,
+				ADE475AC255172C700F12842 /* CoreDataTest.swift */,
+				ADE475AA2551625700F12842 /* UnitHelperTest.swift */,
+				ADE475A4255158A600F12842 /* Info.plist */,
+			);
+			path = TeliaWeatherTests;
+			sourceTree = "<group>";
+		};
+		ADE475B32551A03400F12842 /* TeliaWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADE475B42551A03400F12842 /* TeliaWeatherUITests.swift */,
+				ADE475B62551A03400F12842 /* Info.plist */,
+			);
+			path = TeliaWeatherUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADE4754D254EB09300F12842 /* Build configuration list for PBXNativeTarget "TeliaWeather" */;
 			buildPhases = (
+				6DEF6534BF72B30AB6534A5F /* [CP] Check Pods Manifest.lock */,
 				ADE47532254EB09000F12842 /* Sources */,
 				ADE47533254EB09000F12842 /* Frameworks */,
 				ADE47534254EB09000F12842 /* Resources */,
+				40656DE58D6333A1319837DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,6 +229,42 @@
 			productName = TeliaWeather;
 			productReference = ADE47536254EB09000F12842 /* TeliaWeather.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ADE4759F255158A600F12842 /* TeliaWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE475A7255158A600F12842 /* Build configuration list for PBXNativeTarget "TeliaWeatherTests" */;
+			buildPhases = (
+				ADE4759C255158A600F12842 /* Sources */,
+				ADE4759D255158A600F12842 /* Frameworks */,
+				ADE4759E255158A600F12842 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADE475A6255158A600F12842 /* PBXTargetDependency */,
+			);
+			name = TeliaWeatherTests;
+			productName = TeliaWeatherTests;
+			productReference = ADE475A0255158A600F12842 /* TeliaWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADE475B12551A03400F12842 /* TeliaWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE475B92551A03400F12842 /* Build configuration list for PBXNativeTarget "TeliaWeatherUITests" */;
+			buildPhases = (
+				ADE475AE2551A03400F12842 /* Sources */,
+				ADE475AF2551A03400F12842 /* Frameworks */,
+				ADE475B02551A03400F12842 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADE475B82551A03400F12842 /* PBXTargetDependency */,
+			);
+			name = TeliaWeatherUITests;
+			productName = TeliaWeatherUITests;
+			productReference = ADE475B22551A03400F12842 /* TeliaWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -110,6 +278,14 @@
 				TargetAttributes = {
 					ADE47535254EB09000F12842 = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					ADE4759F255158A600F12842 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = ADE47535254EB09000F12842;
+					};
+					ADE475B12551A03400F12842 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = ADE47535254EB09000F12842;
 					};
 				};
 			};
@@ -127,6 +303,8 @@
 			projectRoot = "";
 			targets = (
 				ADE47535254EB09000F12842 /* TeliaWeather */,
+				ADE4759F255158A600F12842 /* TeliaWeatherTests */,
+				ADE475B12551A03400F12842 /* TeliaWeatherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -142,7 +320,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADE4759E255158A600F12842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE475B02551A03400F12842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40656DE58D6333A1319837DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeliaWeather/Pods-TeliaWeather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeliaWeather/Pods-TeliaWeather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeliaWeather/Pods-TeliaWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DEF6534BF72B30AB6534A5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeliaWeather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ADE47532254EB09000F12842 /* Sources */ = {
@@ -151,12 +385,56 @@
 			files = (
 				ADE4753A254EB09000F12842 /* AppDelegate.swift in Sources */,
 				ADE4753F254EB09000F12842 /* TeliaWeather.xcdatamodeld in Sources */,
-				ADE47541254EB09000F12842 /* ContentView.swift in Sources */,
+				ADE4759225506A5C00F12842 /* ErrorManager.swift in Sources */,
+				ADE4755D254EC5A900F12842 /* ForecastTableViewDataSource.swift in Sources */,
+				ADE4759425506B6200F12842 /* AppConstants.swift in Sources */,
+				ADE47590254F615900F12842 /* CoreDataManager.swift in Sources */,
+				ADE47557254EB8A100F12842 /* PagesViewController.swift in Sources */,
+				ADE4758C254F110600F12842 /* ViewModel.swift in Sources */,
+				ADE4755F254EDC8200F12842 /* WeatherApiClient.swift in Sources */,
+				ADE47559254EB9BD00F12842 /* WeatherPage.swift in Sources */,
+				ADE4755B254EBC4000F12842 /* WeatherForecastCell.swift in Sources */,
+				ADE47551254EB0DA00F12842 /* APIClient.swift in Sources */,
+				ADE4759B2551490F00F12842 /* DecodeHelper.swift in Sources */,
+				ADE47596255076C900F12842 /* DataProvider.swift in Sources */,
 				ADE4753C254EB09000F12842 /* SceneDelegate.swift in Sources */,
+				ADE4758E254F524600F12842 /* UnitHelper.swift in Sources */,
+				ADE4759825508C0400F12842 /* WeatherIconManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE4759C255158A600F12842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE475AD255172C700F12842 /* CoreDataTest.swift in Sources */,
+				ADE475A3255158A600F12842 /* HttpClientTest.swift in Sources */,
+				ADE475AB2551625700F12842 /* UnitHelperTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE475AE2551A03400F12842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE475B52551A03400F12842 /* TeliaWeatherUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADE475A6255158A600F12842 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADE47535254EB09000F12842 /* TeliaWeather */;
+			targetProxy = ADE475A5255158A600F12842 /* PBXContainerItemProxy */;
+		};
+		ADE475B82551A03400F12842 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADE47535254EB09000F12842 /* TeliaWeather */;
+			targetProxy = ADE475B72551A03400F12842 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ADE47547254EB09300F12842 /* LaunchScreen.storyboard */ = {
@@ -286,6 +564,7 @@
 		};
 		ADE4754E254EB09300F12842 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A12E1FBB4A9F4F5CE3BABFAA /* Pods-TeliaWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +585,7 @@
 		};
 		ADE4754F254EB09300F12842 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 595E255510ED4CDFE1542977 /* Pods-TeliaWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,6 +601,84 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADE475A8255158A600F12842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DQMEK652W;
+				INFOPLIST_FILE = TeliaWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stelmakhovska.TeliaWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeliaWeather.app/TeliaWeather";
+			};
+			name = Debug;
+		};
+		ADE475A9255158A600F12842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DQMEK652W;
+				INFOPLIST_FILE = TeliaWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stelmakhovska.TeliaWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeliaWeather.app/TeliaWeather";
+			};
+			name = Release;
+		};
+		ADE475BA2551A03400F12842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DQMEK652W;
+				INFOPLIST_FILE = TeliaWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stelmakhovska.TeliaWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeliaWeather;
+			};
+			name = Debug;
+		};
+		ADE475BB2551A03400F12842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DQMEK652W;
+				INFOPLIST_FILE = TeliaWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stelmakhovska.TeliaWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeliaWeather;
 			};
 			name = Release;
 		};
@@ -341,6 +699,24 @@
 			buildConfigurations = (
 				ADE4754E254EB09300F12842 /* Debug */,
 				ADE4754F254EB09300F12842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE475A7255158A600F12842 /* Build configuration list for PBXNativeTarget "TeliaWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE475A8255158A600F12842 /* Debug */,
+				ADE475A9255158A600F12842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE475B92551A03400F12842 /* Build configuration list for PBXNativeTarget "TeliaWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE475BA2551A03400F12842 /* Debug */,
+				ADE475BB2551A03400F12842 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

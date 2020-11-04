@@ -7,3 +7,11 @@
 //
 
 import Foundation
+/**
+ Compose own error codes for future handeling
+ */
+import Foundation
+public let TWNetworkingErrorDomain = "Stelmakhovska.WeatherApp"
+public let MissingHTTPResponse = 100
+
+public let UnexpectedResponseError = 200
